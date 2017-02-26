@@ -3,17 +3,18 @@ const TAX_RATE = 0.08;
 
 // account model
 var Account = {
-  username: 'string',
-  firstName: 'string',
-  lastName: 'string',
-  bankBalance: 'number',
+  userId: Number,
+  username: String,
+  firstName: String,
+  lastName: String,
+  bankBalance: Number,
   fullName: () => {
     return this.firstName + '' + this.lastName
   }
 }
 
 // create user account
-createAccount() {
+function createAccount() {
   // create new instance of account for new user
   newAccount = New Account();
 
